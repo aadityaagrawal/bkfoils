@@ -5,10 +5,16 @@ import text from '../../Utilities/Constants/text_constants'
 
 
 function FrontPage() {
+  const customStyle = {
+    backgroundColor: "#008080 !important" 
+  };
+
   return (
     <div className='container-fluid p-0 frontPage'>
+      <div style={customStyle}>
         <NavigationBar />
-        <div className='container fs-1 frontHeading col-lg-6 col-md-8'>
+      </div>
+        <div className='container frontHeading col-lg-6 col-md-8'>
             {text.heading}
         </div>
     </div>

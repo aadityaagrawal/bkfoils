@@ -5,7 +5,9 @@ function HorizontalBrake() {
         backgroundColor: "#E27396",
         height: "4px",
         border: "none" ,
-        borderRadius: "4px"
+        borderRadius: "4px",
+        margin : "0px",
+        padding : "0px",
       };
 
   return (

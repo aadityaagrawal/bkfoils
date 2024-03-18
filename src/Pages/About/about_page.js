@@ -1,50 +1,57 @@
 import React from 'react'
 import Plate from "../../Utilities/Images/Plate.png";
 import HorizontalBrake from "../../Components/break";
+import './aboutpage.css'
+import { IoCall } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import text from '../../Utilities/Constants/text_constants';
+
 
 function AboutUs() {
+  
+
   return (
     <div>
         <div className="container-fluid m-0 p-0 d-flex">
         <img src={Plate} className="plateImage" alt="plate"></img>
 
-        <div className="container p-5">
-          <p className="fs-1" style={{ color: "#008080" }}>
-            About Us
+        <div className="container-fluid p-4">
+          <p className="fs-1 title">
+            {text.heading1}
           </p>
           <HorizontalBrake />
-          <p className="fs-5" style={{ textAlign: "justify" }}>
-            Lorem ipsum dolor sit amet consectetur. Vitae nibh ultrices turpis
-            ullamcorper et ornare sem massa fringilla. Ac pharetra cras accumsan
-            cras posuere facilisis ut. Mi orci enim dignissim odio. Pharetra
-            elementum rhoncus iaculis interdum euismod non sagittis ipsum amet.
-            Turpis arcu id ac parturient dictum imperdiet vitae tincidunt. Et
-            lectus dignissim ornare placerat penatibus convallis mattis
-            ullamcorper sed. Et tristique et augue commodo eget sem viverra mi.
-            Ultrices blandit ut eget donec enim enim id sed nunc. Pretium
-            pharetra vitae malesuada pellentesque fermentum. Est sed ante quis
-            dignissim dictum. Viverra lectus ut nunc sagittis facilisi. Ut est
-            ac nulla eu eget tortor. Arcu fermentum leo parturient justo justo
-            fusce non mauris arcu. Arcu quis sed venenatis varius est nunc.
+          <p className="fs-5 content">
+            {text.aboutus}
           </p>
-          <p className="fs-1" style={{ color: "#008080" }}>
-            Contact Us
+          <p className="fs-1 title">
+          {text.heading2}
           </p>
           <HorizontalBrake />
-          <p className="fs-5" style={{ textAlign: "justify" }}>
-            Lorem ipsum dolor sit amet consectetur. Vitae nibh ultrices turpis
-            ullamcorper et ornare sem massa fringilla. Ac pharetra cras accumsan
-            cras posuere facilisis ut. Mi orci enim dignissim odio. Pharetra
-            elementum rhoncus iaculis interdum euismod non sagittis ipsum amet.
-            Turpis arcu id ac parturient dictum imperdiet vitae tincidunt. Et
-            lectus dignissim ornare placerat penatibus convallis mattis
-            ullamcorper sed. Et tristique et augue commodo eget sem viverra mi.
-            Ultrices blandit ut eget donec enim enim id sed nunc. Pretium
-            pharetra vitae malesuada pellentesque fermentum. Est sed ante quis
-            dignissim dictum. Viverra lectus ut nunc sagittis facilisi. Ut est
-            ac nulla eu eget tortor. Arcu fermentum leo parturient justo justo
-            fusce non mauris arcu. Arcu quis sed venenatis varius est nunc.
-          </p>
+
+          <div className='d-flex fs-5 align-items-center py-2 content'>
+            <div className='d-flex' style={{paddingRight:"16px"}}>
+            <IoCall className='icon'size={text.iconSize}/>
+            {text.mobile1}
+            </div>
+            
+            <div className='d-flex' >
+            <IoCall className='icon' size={text.iconSize}/>
+            {text.mobile2} 
+            </div>
+          
+          </div>
+
+          <div className='d-flex fs-5 align-items-center py-2 content'>
+          <MdEmail className='icon' size={text.iconSize}/> 
+          {text.email}
+          </div>
+
+          <div className='d-flex fs-5 align-items-center py-2 content'>
+          <FaLocationDot className='icon' size={text.iconSize}/>
+          {text.address}
+
+          </div>
         </div>
       </div>
     </div>

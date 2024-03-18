@@ -1,0 +1,22 @@
+
+.title{
+    font-family: "Shrikhand", serif;
+    color: #008080
+}
+
+@media (max-width: 768px) {
+    .plateImage {
+      display: none;
+    }
+  }
+  
+
+.content{
+    font-family: "Fanwood Text", serif;
+    text-align: justify;
+}
+
+.icon{
+    color: #008080;
+    margin-right: 8px;
+}

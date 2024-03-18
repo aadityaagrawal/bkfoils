@@ -1,7 +1,7 @@
 .frontPage {
-  height: 130vh;
+  height: 125vh;
   width: 100%;
-  background-image: url("../../Utilities/Images/LandingPage.svg");
+  background-image: url("../../Utilities/Images/LandingPage.png");
   background-repeat: no-repeat;
   background-size:cover;
   object-fit: contain ;
@@ -15,5 +15,6 @@
   color: #008080;
   display: flex;
   align-items: center;
+  font-size: 2.5rem;
   height: 80vh;
 }

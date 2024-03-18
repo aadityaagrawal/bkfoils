@@ -9,10 +9,9 @@ function NavigationBar() {
   };
     
   return (
-    
-    <Navbar expand="lg" className='p-0' style={customStyle}>
+    <Navbar expand="lg" className=' p-1 custom-navbar'>
       <div className='container-fluid m-0 d-flex align-items-bottom'>
-        <Navbar.Brand href="#home" className='brandName fs-3'>{text.brand}</Navbar.Brand>
+        <Navbar.Brand href="#home" className='brandName fs-2'>{text.brand}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
