@@ -1,0 +1,19 @@
+.frontPage {
+  height: 130vh;
+  width: 100%;
+  background-image: url("../../Utilities/Images/LandingPage.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  object-fit: contain ;
+}
+
+.frontHeading {
+  font-family: "Shrikhand", serif;
+  font-weight: 400 !important;
+  background-color: transparent !important;
+  font-style: italic;
+  color: #008080;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
